@@ -24,20 +24,16 @@
   <link href="./src/assets/css/themecss/so-latest-blog.css" rel="stylesheet">
   <link href="./src/assets/css/footer/footer1.css" rel="stylesheet">
   <link href="./src/assets/css/header/header1.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/assets/css/animate.min.css">
+  <link rel="stylesheet" href="./src/assets/css/styleDash.css">
   <link id="color_scheme" href="./src/assets/css/theme.css" rel="stylesheet">
   <link href="./src/assets/css/responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Dass</title>
 </head>
 
-<body class="common-home res layout-1">
+<body  class="common-home res layout-1">
   <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
     .swiper {
       width: 100%;
       height: 100%;
@@ -100,10 +96,68 @@
       height: 100%;
       object-fit: cover;
     }
+    .owl2-stage{
+      transform: translate3d(0 , 0 , 0) !important ;
+    }
   </style>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
-  <script type="text/javascript" src="./src/assets/js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/owl-carousel/owl.carousel.js"></script>
+  <script type="text/javascript" src="/assets/js/slick-slider/slick.js"></script>
+  <script type="text/javascript" src="/assets/js/themejs/libs.js"></script>
+  <script type="text/javascript" src="/assets/js/unveil/jquery.unveil.js"></script>
+  <script type="text/javascript" src="/assets/js/countdown/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="/assets/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+  <script type="text/javascript" src="/assets/js/datetimepicker/moment.js"></script>
+  <script type="text/javascript" src="/assets/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/assets/js/modernizr/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="/assets/js/minicolors/jquery.miniColors.min.js"></script>
+  <script type="text/javascript" src="/assets/js/lightslider/lightslider.js"></script>
+  <script type="text/javascript" src="/assets/js/themejs/application.js"></script>
+  <script type="text/javascript" src="/assets/js/themejs/homepage.js"></script>
+  <script type="text/javascript" src="/assets/js/themejs/toppanel.js"></script>
+  <script type="text/javascript" src="/assets/js/themejs/so_megamenu.js"></script>
+  <script type="text/javascript" src="/assets/js/themejs/addtocart.js"></script>
+
+  <style>
+
+    .subscription-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        
+    }
+    .subscription-table th, .subscription-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+    }
+    .subscription-table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+    .subscription-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .subscription-table tr:hover {
+        background-color: #f1f1f1;
+    }
+    .check-mark {
+        color: green;
+    }
+    .cross-mark {
+        color: red;
+    }
+    .price {
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- <script type="text/javascript" src="./src/assets/js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="./src/assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./src/assets/js/owl-carousel/owl.carousel.js"></script>
   <script type="text/javascript" src="./src/assets/js/slick-slider/slick.js"></script>
@@ -121,9 +175,7 @@
   <script type="text/javascript" src="./src/assets/js/themejs/homepage.js"></script>
   <script type="text/javascript" src="./src/assets/js/themejs/toppanel.js"></script>
   <script type="text/javascript" src="./src/assets/js/themejs/so_megamenu.js"></script>
-  <script type="text/javascript" src="./src/assets/js/themejs/addtocart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+  <script type="text/javascript" src="./src/assets/js/themejs/addtocart.js"></script> -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,

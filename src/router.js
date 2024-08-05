@@ -10,6 +10,8 @@ import Chekout from "./pages/chekout.vue";
 import OrderHistory from "./pages/orderHistory.vue";
 import OrderInfo from "./pages/orderInfo.vue";
 import Profile from "./pages/profile.vue";
+import FAQ from "./pages/faq.vue";
+import AboutUs from "./pages/AboutUs.vue"
 const routes = [
     {
         path: "/",
@@ -66,6 +68,18 @@ const routes = [
         name: "Profile",
         component: Profile
     },
+    {
+        path: "/FAQ",
+        name: "FAQ",
+        component: FAQ,
+
+    },
+    {
+        path: "/about-us",
+        name: "AboutUs",
+        component: AboutUs,
+
+    }
 ]
 
 export default createRouter({

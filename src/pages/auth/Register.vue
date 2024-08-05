@@ -10,13 +10,13 @@
 		
 		<div class="row">
 			<div id="content" class="col-sm-12">
-				<h2 class="title">Register Account</h2>
-				<p>If you already have an account with us, please login at the <router-link :to="{name:'Login'}">login page</router-link>.</p>
+				<h2 class="title">انشاء حساب جديد </h2>
+				<p>إذا كان لديك بالفعل حساب معنا، يرجى تسجيل الدخول على<router-link :to="{name:'Login'}">تسجيل دخول</router-link>.</p>
 				<form action="" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
 					<fieldset id="account">
-						<legend>Your Personal Details</legend>
+						<legend>ادخل بيناتك الشخصية</legend>
 						<div class="form-group required" style="display: none;">
-							<label class="col-sm-2 control-label">Customer Group</label>
+							<label class="col-sm-2 control-label">بينات العميل </label>
 							<div class="col-sm-10">
 								<div class="radio">
 									<label>
@@ -26,42 +26,42 @@
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-firstname">First Name</label>
+							<label class="col-sm-2 control-label" for="input-firstname">الاسم الاول </label>
 							<div class="col-sm-10">
-								<input type="text" name="firstname" value="" placeholder="First Name" id="input-firstname" class="form-control">
+								<input type="text" name="firstname" value="" placeholder="الاسم الاول " id="input-firstname" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-lastname">Last Name</label>
+							<label class="col-sm-2 control-label" for="input-lastname">الاسم الاخير </label>
 							<div class="col-sm-10">
-								<input type="text" name="lastname" value="" placeholder="Last Name" id="input-lastname" class="form-control">
+								<input type="text" name="lastname" value="" placeholder="الاسم الاخير" id="input-lastname" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-email">E-Mail</label>
+							<label class="col-sm-2 control-label" for="input-email">الاميل</label>
 							<div class="col-sm-10">
-								<input type="email" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control">
+								<input type="email" name="email" value="" placeholder="الايمل" id="input-email" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-telephone">Telephone</label>
+							<label class="col-sm-2 control-label" for="input-telephone">رقم الهاتف</label>
 							<div class="col-sm-10">
-								<input type="tel" name="telephone" value="" placeholder="Telephone" id="input-telephone" class="form-control">
+								<input type="tel" name="telephone" value="" placeholder="رقم الهاتف" id="input-telephone" class="form-control">
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
-						<legend>Your Password</legend>
+						<legend>كلمة المرور </legend>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-password">Password</label>
+							<label class="col-sm-2 control-label" for="input-password">كلمة المرور </label>
 							<div class="col-sm-10">
-								<input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control">
+								<input type="password" name="password" value="" placeholder="كلمة المرور" id="input-password" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-confirm">Password Confirm</label>
+							<label class="col-sm-2 control-label" for="input-confirm">تاكيد كلمة المرور </label>
 							<div class="col-sm-10">
-								<input type="password" name="confirm" value="" placeholder="Password Confirm" id="input-confirm" class="form-control">
+								<input type="password" name="confirm" value="" placeholder="تاكيد كلمة المرور " id="input-confirm" class="form-control">
 							</div>
 						</div>
 					</fieldset>

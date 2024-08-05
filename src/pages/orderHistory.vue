@@ -2,24 +2,24 @@
     <div class="main-container container">
         <ul class="breadcrumb">
             <li><a href="#"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Order History</a></li>
+            <li><a href="#">تاريخ الطلب</a></li>
         </ul>
 
         <div class="row">
             <!--Middle Part Start-->
-            <div id="content" class="col-sm-12">
-                <h2 class="title">Order History</h2>
+            <div  id="content" class="col-sm-12">
+                <h2 class="title">تاريخ الطلب</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
-                                <td class="text-center">Image</td>
-                                <td class="text-left">Product Name</td>
-                                <td class="text-center">Order ID</td>
-                                <td class="text-center">Qty</td>
-                                <td class="text-center">Status</td>
-                                <td class="text-center">Date Added</td>
-                                <td class="text-right">Total</td>
+                                <td class="text-center">الصورة</td>
+                                <td class="text-left">اسم المنتج  </td>
+                                <td class="text-center">رقم المنتج</td>
+                                <td class="text-center">العدد</td>
+                                <td class="text-center">الحالة</td>
+                                <td class="text-center">تاريخ الاضافة</td>
+                                <td class="text-right">الاجمالي</td>
                                 <td></td>
                             </tr>
                         </thead>

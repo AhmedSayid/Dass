@@ -10,13 +10,13 @@
                                 <div class="sas_wrap">
                                     <div class="sas_inner">
                                         <div class="heading-title">
-                                            <h2>Select Your Vehical</h2>
+                                            <h2>اختر مركبتك</h2>
                                         </div>
                                         <div class="sas_inner-box-search">
                                             <div class="row">
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 search-boxes">
                                                     <select name="make" id="so_make0" class="form-control">
-                                                        <option value="">Select Make</option>
+                                                        <option value="">اختر الشركة المصنعة</option>
                                                         <option value="1">Acura</option>
                                                         <option value="2">BMW</option>
                                                         <option value="3">Chevrolet</option>
@@ -34,30 +34,14 @@
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 search-boxes">
                                                     <select name="model" id="so_model0" class="form-control">
-                                                        <option value="">Select Model</option>
+                                                        <option value="">اختر الموديل</option>
                                                         <option value="1">3D Model</option>
                                                         <option value="2">BMW</option>
                                                         <option value="3">1000 Rocket</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 search-boxes">
-                                                    <select name="engine" id="so_engine0" class="form-control">
-                                                        <option value="">Select Engine</option>
-                                                        <option value="1">320i</option>
-                                                        <option value="2">x5</option>
-                                                        <option value="3">350i</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 search-boxes">
-                                                    <select name="year" id="so_year0" class="form-control">
-                                                        <option value="">Select Year</option>
-                                                        <option value="1">2015</option>
-                                                        <option value="2">2016</option>
-                                                        <option value="3">2017</option>
-                                                    </select>
-                                                </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 search-button">
-                                                    <button type="button" id="sas_search_button0">Find My Part</button>
+                                                    <button type="button" id="sas_search_button0">اجد جزئي </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -66,24 +50,8 @@
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 col_htca  col-style">
-                            <div class="quick-links">
-                                <ul class="">
-                                    <li>
-                                        <h2>Go Quickly to:</h2>
-                                    </li>
-                                    <li><a href="#">Smart devices,</a></li>
-                                    <li><a href="#">Tool &amp; Equipments,</a></li>
-                                    <li><a href="#">Wheels &amp; Tires,</a></li>
-                                    <li><a href="#">Accessories,</a></li>
-                                    <li><a href="#">Oil Fluids,</a></li>
-                                    <li><a href="#">Smartphone,</a></li>
-                                    <li><a href="#">Cellphone,</a></li>
-                                    <li><a href="#">Cameras,</a></li>
-                                    <li><a href="#">Latops,</a></li>
-                                    <li><a href="#">Tablets</a></li>
-                                </ul>
-                            </div>
-                            <div class="slider-container">
+
+                            <div dir="ltr" class="slider-container">
                                 <div class="module sohomepage-slider ">
                                     <div class="yt-content-slider" data-rtl="yes" data-autoplay="no"
                                         data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="0"
@@ -116,9 +84,9 @@
                         <!-- Extra Best seller -->
                         <div class="module extra-layout1">
                             <div class="pre_text">
-                                Top sale in the week
+                                الاكثر مبيعا خلال الاسبوع
                             </div>
-                            <h3 class="modtitle"><span>Best Seller</span></h3>
+                            <h3 class="modtitle"><span>الافضل مبيعا</span></h3>
                             <div class="modcontent">
                                 <div id="so_extra_slider_11" class="so-extraslider button-type1">
                                     <div class="products-list yt-content-slider extraslider-inner" data-rtl="yes"
@@ -135,7 +103,7 @@
 
                                                                 <a target="_self" title="Volup tatem accu">
                                                                     <img :src="ImageProduct1"
-                                                                        class="img-1 img-responsive " 
+                                                                        class="img-1 img-responsive "
                                                                         :alt="ImageProduct1">
                                                                     <img :src="ImageProduct2"
                                                                         class="img-2 img-responsive "
@@ -143,7 +111,7 @@
                                                                 </a>
                                                             </router-link>
                                                         </div>
-                                                        <span class="label-product label-new">New </span>
+                                                        <span class="label-product label-جديد">جديد </span>
                                                     </div>
                                                     <div class="right-block">
                                                         <div class="button-group cartinfo--static">
@@ -152,9 +120,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -188,7 +156,7 @@
                                                                     :alt="ImageProduct2">
                                                             </a>
                                                         </div>
-                                                        <span class="label-product label-new">New</span>
+                                                        <span class="label-product label-جديد">جديد</span>
                                                         <!--quickview-->
 
                                                         <!--end quickview-->
@@ -199,9 +167,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -249,9 +217,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -269,7 +237,7 @@
                                                                     class="fa fa-star-o fa-stack-2x"></i></span>
                                                         </div>
                                                         <div class="price">
-                                                            <span class="price-new">$85.00</span>
+                                                            <span class="price-جديد">$85.00</span>
                                                             <span class="price-old">$96.00</span>
                                                         </div>
                                                     </div>
@@ -298,9 +266,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -337,7 +305,7 @@
                                                                     :alt="ImageProduct2">
                                                             </a>
                                                         </div>
-                                                        <span class="label-product label-new">New</span>
+                                                        <span class="label-product label-جديد">جديد</span>
                                                         <!--quickview-->
 
                                                         <!--end quickview-->
@@ -349,9 +317,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -397,9 +365,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -417,7 +385,7 @@
                                                                     class="fa fa-star fa-stack-2x"></i></span>
                                                         </div>
                                                         <div class="price">
-                                                            <span class="price-new">$50.00</span>
+                                                            <span class="price-جديد">$50.00</span>
                                                             <span class="price-old">$59.00</span>
                                                         </div>
                                                     </div>
@@ -447,9 +415,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -496,9 +464,9 @@
                                                                 title="Add to Wish List"
                                                                 onclick="wishlist.add('60');"><i
                                                                     class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart" title="Add to cart"
-                                                                onclick="cart.add('60 ');">
-                                                                <span>Add to cart </span>
+                                                            <button type="button" class="addToCart"
+                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                <span>اضف الي العربة </span>
                                                             </button>
 
                                                         </div>
@@ -534,7 +502,7 @@
                         <div class="container row row-deals">
                             <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
                                 <div class="module deals-layout1">
-                                    <h3 class="modtitle2"><span>Deal of the day</span></h3>
+                                    <h3 class="modtitle2"><span> صفقة اليوم</span></h3>
                                     <div class="modcontent">
                                         <div id="so_deal_11" class="so-deal">
                                             <div class="products-list yt-content-slider extraslider-inner"
@@ -574,7 +542,7 @@
                                                                             class="fa fa-star-o fa-stack-2x"></i></span>
                                                                 </div>
                                                                 <div class="price">
-                                                                    <span class="price-new">$50.00</span>
+                                                                    <span class="price-جديد">$50.00</span>
                                                                     <span class="price-old">$59.00</span>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -587,8 +555,9 @@
                                                                 </div>
                                                                 <div class="button-group">
                                                                     <button type="button" class="addToCart"
-                                                                        title="Add to cart" onclick="cart.add('60 ');">
-                                                                        <span>Add to cart </span>
+                                                                        title="اضف الي العربة"
+                                                                        onclick="cart.add('60 ');">
+                                                                        <span>اضف الي العربة </span>
                                                                     </button>
                                                                     <button type="button" class="wishlist btn-button"
                                                                         title="Add to Wish List"
@@ -609,7 +578,7 @@
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-style hidden-xs hidden-sm">
                                 <div class="banners banners1 ">
                                     <div>
-                                        <a href="#"><img  :src="Ad" alt="banner"></a>
+                                        <a href="#"><img :src="Ad" alt="banner"></a>
                                     </div>
                                 </div>
                             </div>
@@ -618,12 +587,12 @@
                     <!-- end Deals -->
 
                     <div class="container">
-                        <!-- Extra new arrivals -->
+                        <!-- Extra جديد arrivals -->
                         <div class="module extra-layout1">
                             <div class="pre_text">
-                                Top sale in the week
+                                الاكثلا مبيعا خلال الاسبوع
                             </div>
-                            <h3 class="modtitle"><span>New Arrivals</span></h3>
+                            <h3 class="modtitle"><span>وصل جديدا </span></h3>
                             <div class="modcontent">
                                 <div id="so_extra_slider_12" class="so-extraslider button-type1">
                                     <div class="products-list yt-content-slider extraslider-inner" data-rtl="yes"
@@ -644,7 +613,7 @@
                                                                         class="img-2 img-responsive">
                                                                 </a>
                                                             </div>
-                                                            <span class="label-product label-new">New</span>
+                                                            <span class="label-product label-جديد">جديد</span>
                                                             <!--quickview-->
                                                             <div class="so-quickview">
 
@@ -658,8 +627,8 @@
                                                                     onclick="wishlist.add('60');"><i
                                                                         class="fa fa-heart"></i></button>
                                                                 <button type="button" class="addToCart"
-                                                                    title="Add to cart" onclick="cart.add('60 ');">
-                                                                    <span>Add to cart </span>
+                                                                    title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                    <span>اضف الي العربة </span>
                                                                 </button>
 
                                                             </div>
@@ -712,8 +681,8 @@
                                                                     onclick="wishlist.add('60');"><i
                                                                         class="fa fa-heart"></i></button>
                                                                 <button type="button" class="addToCart"
-                                                                    title="Add to cart" onclick="cart.add('60 ');">
-                                                                    <span>Add to cart </span>
+                                                                    title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                    <span>اضف الي العربة </span>
                                                                 </button>
 
                                                             </div>
@@ -731,7 +700,7 @@
                                                                         class="fa fa-star-o fa-stack-2x"></i></span>
                                                             </div>
                                                             <div class="price">
-                                                                <span class="price-new">$85.00</span>
+                                                                <span class="price-جديد">$85.00</span>
                                                                 <span class="price-old">$96.00</span>
                                                             </div>
                                                         </div>
@@ -752,7 +721,7 @@
                                                                         class="img-2 img-responsive">
                                                                 </a>
                                                             </div>
-                                                            <span class="label-product label-new">New</span>
+                                                            <span class="label-product label-جديد">جديد</span>
                                                             <!--quickview-->
                                                             <div class="so-quickview">
 
@@ -767,8 +736,8 @@
                                                                     onclick="wishlist.add('60');"><i
                                                                         class="fa fa-heart"></i></button>
                                                                 <button type="button" class="addToCart"
-                                                                    title="Add to cart" onclick="cart.add('60 ');">
-                                                                    <span>Add to cart </span>
+                                                                    title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                    <span>اضف الي العربة </span>
                                                                 </button>
 
                                                             </div>
@@ -821,8 +790,8 @@
                                                                     onclick="wishlist.add('60');"><i
                                                                         class="fa fa-heart"></i></button>
                                                                 <button type="button" class="addToCart"
-                                                                    title="Add to cart" onclick="cart.add('60 ');">
-                                                                    <span>Add to cart </span>
+                                                                    title="اضف الي العربة" onclick="cart.add('60 ');">
+                                                                    <span>اضف الي العربة </span>
                                                                 </button>
 
                                                             </div>
@@ -851,7 +820,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end Extra new arrivals -->
+                        <!-- end Extra جديد arrivals -->
                         <div class="banners banners2">
                             <div class="row">
                                 <div class="item col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -868,9 +837,9 @@
                         <div id="so_categories_11"
                             class="so-categories module theme2 cates-layout1 container preset01-3 preset02-2 preset03-2 preset04-2 preset05-1">
                             <div class="pre_text">
-                                Top featured collections
+                                أعلى المجموعات المميزة
                             </div>
-                            <h3 class="modtitle"><span>Shop by categories</span></h3>
+                            <h3 class="modtitle"><span>ابحث بالقسم</span></h3>
                             <div class="modcontent">
                                 <div class="cat-wrap theme2">
                                     <div class="content-box">
@@ -887,7 +856,7 @@
                                                 <div class="child-cat-title"><a href="#">Tires Accessories</a></div>
                                                 <div class="child-cat-title"><a href="#">Wheels</a></div>
                                                 <div class="child-cat-title"><a href="#">Wheels Accessories</a></div>
-                                                <a class="viewmore" href="#">View More</a>
+                                                <a class="viewmore" href="#">عرض المزيد</a>
                                             </div>
                                         </div>
                                     </div>
@@ -906,7 +875,7 @@
                                                 <div class="child-cat-title"><a href="#">Screen TV</a></div>
                                                 <div class="child-cat-title"><a href="#">Smartwatch</a></div>
                                                 <div class="child-cat-title"><a href="#">USB Connect</a></div>
-                                                <a class="viewmore" href="#">View More</a>
+                                                <a class="viewmore" href="#">عرض المزيد</a>
                                             </div>
                                         </div>
                                     </div>
@@ -924,7 +893,7 @@
                                                 <div class="child-cat-title"><a href="#">Duis aute</a></div>
                                                 <div class="child-cat-title"><a href="#">Deserunt mollit</a></div>
                                                 <div class="child-cat-title"><a href="#">Laudantium</a></div>
-                                                <a class="viewmore" href="#">View More</a>
+                                                <a class="viewmore" href="#">عرض المزيد</a>
                                             </div>
                                         </div>
                                     </div>
@@ -942,7 +911,7 @@
                                                 <div class="child-cat-title"><a href="#">Aspering</a></div>
                                                 <div class="child-cat-title"><a href="#">Interior Light</a></div>
                                                 <div class="child-cat-title"><a href="#">Consectetur</a></div>
-                                                <a class="viewmore" href="#">View More</a>
+                                                <a class="viewmore" href="#">عرض المزيد</a>
                                             </div>
                                         </div>
                                     </div>
@@ -960,7 +929,7 @@
                                                 <div class="child-cat-title"><a href="#">Shock & Suspension</a></div>
                                                 <div class="child-cat-title"><a href="#">Outerwear</a></div>
                                                 <div class="child-cat-title"><a href="#">Exhaust & Emission</a></div>
-                                                <a class="viewmore" href="#">View More</a>
+                                                <a class="viewmore" href="#">عرض المزيد</a>
                                             </div>
                                         </div>
                                     </div>
@@ -978,7 +947,7 @@
                                                 <div class="child-cat-title"><a href="#">Impact Wrenches</a></div>
                                                 <div class="child-cat-title"><a href="#">Tire Air Compressors </a></div>
                                                 <div class="child-cat-title"><a href="#">Hand Tools</a></div>
-                                                <a class="viewmore" href="#">View More</a>
+                                                <a class="viewmore" href="#">عرض المزيد</a>
                                             </div>
                                         </div>
                                     </div>
@@ -990,8 +959,8 @@
 
                     <div class="container">
                         <div class="slider-brands module">
-                            <div class="pre_text">Top quality partners</div>
-                            <h3 class="modtitle"><span>Shop by Brands</span></h3>
+                            <div class="pre_text">شركاء الجودة العالية</div>
+                            <h3 class="modtitle"><span>تسوق حسب العلامات التجارية</span></h3>
 
                             <div class="yt-content-slider contentslider" data-rtl="no" data-loop="yes"
                                 data-autoplay="no" data-autoheight="no" data-autowidth="no" data-delay="4"
@@ -1011,7 +980,11 @@
                         </div>
 
                     </div>
-
+                    <div class="container">
+                        
+                            <Pakages></Pakages>
+                      
+                    </div>
                 </div>
 
             </div>
@@ -1044,7 +1017,7 @@ import b4 from "../assets/img/b4.jpg"
 import b5 from "../assets/img/b5.jpg"
 import b6 from "../assets/img/b6.jpg"
 import b7 from "../assets/img/b7.jpg"
-
+import Pakages from '../components/pakages.vue';
 export default {
     name: "Home",
     data() {
@@ -1074,6 +1047,9 @@ export default {
             b7
 
         }
+    },
+    components: {
+        Pakages
     }
 
 }

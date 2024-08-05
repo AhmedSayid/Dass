@@ -15,36 +15,36 @@
                     <div class="col-left col-sm-3">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title"><i class="fa fa-user"></i> Your Personal Details</h4>
+                                <h4 class="panel-title"><i class="fa fa-user"></i> معلوماتك الشخصية</h4>
                             </div>
                             <div class="panel-body">
                                 <fieldset id="account">
                                     <div class="form-group required">
-                                        <label for="input-payment-firstname" class="control-label">First Name</label>
+                                        <label for="input-payment-firstname" class="control-label">الاسم الاول</label>
                                         <input type="text" class="form-control" id="input-payment-firstname"
-                                            placeholder="First Name" value="" name="firstname">
+                                            placeholder="الاسم الاول " value="" name="firstname">
                                     </div>
                                     <div class="form-group required">
-                                        <label for="input-payment-lastname" class="control-label">Last Name</label>
+                                        <label for="input-payment-lastname" class="control-label">الاسم الاخير </label>
                                         <input type="text" class="form-control" id="input-payment-lastname"
-                                            placeholder="Last Name" value="" name="lastname">
+                                            placeholder="الاسم الاخير" value="" name="lastname">
                                     </div>
                                     <div class="form-group required">
-                                        <label for="input-payment-email" class="control-label">E-Mail</label>
+                                        <label for="input-payment-email" class="control-label">الاميل</label>
                                         <input type="text" class="form-control" id="input-payment-email"
-                                            placeholder="E-Mail" value="" name="email">
+                                            placeholder="الايميل" value="" name="email">
                                     </div>
                                     <div class="form-group required">
-                                        <label for="input-payment-telephone" class="control-label">Telephone</label>
+                                        <label for="input-payment-telephone" class="control-label">رقم الهاتم</label>
                                         <input type="text" class="form-control" id="input-payment-telephone"
-                                            placeholder="Telephone" value="" name="telephone">
+                                            placeholder="رقم الهاتف" value="" name="telephone">
                                     </div>
                                 </fieldset>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title"><i class="fa fa-book"></i> Your Address</h4>
+                                <h4 class="panel-title"><i class="fa fa-book"></i> عنوانك</h4>
                             </div>
                             <div class="panel-body">
                                 <fieldset id="address" class="required">
@@ -59,19 +59,19 @@
                                             placeholder="Address 2" value="" name="address_2">
                                     </div>
                                     <div class="form-group required">
-                                        <label for="input-payment-city" class="control-label">City</label>
+                                        <label for="input-payment-city" class="control-label">المدينة</label>
                                         <input type="text" class="form-control" id="input-payment-city"
-                                            placeholder="City" value="" name="city">
+                                            placeholder="المدينة" value="" name="city">
                                     </div>
                                     <div class="form-group required">
-                                        <label for="input-payment-postcode" class="control-label">Post Code</label>
+                                        <label for="input-payment-postcode" class="control-label">الرمز البريدي</label>
                                         <input type="text" class="form-control" id="input-payment-postcode"
-                                            placeholder="Post Code" value="" name="postcode">
+                                            placeholder="الرمز البريدي" value="" name="postcode">
                                     </div>
                                     <div class="form-group required">
-                                        <label for="input-payment-country" class="control-label">Country</label>
+                                        <label for="input-payment-country" class="control-label">البلد</label>
                                         <select class="form-control" id="input-payment-country" name="country_id">
-                                            <option value=""> --- Please Select --- </option>
+                                            <option value="">البلد</option>
                                             <option value="244">Aaland Islands</option>
                                             <option value="1">Afghanistan</option>
                                             <option value="2">Albania</option>
@@ -94,46 +94,29 @@
 
                                         </select>
                                     </div>
-                                    <div class="form-group required">
-                                        <label for="input-payment-zone" class="control-label">Region / State</label>
-                                        <select class="form-control" id="input-payment-zone" name="zone_id">
-                                            <option value=""> --- Please Select --- </option>
-                                            <option value="3513">Aberdeen</option>
-                                            <option value="3514">Aberdeenshire</option>
-                                            <option value="3515">Anglesey</option>
-                                            <option value="3516">Angus</option>
-                                            <option value="3517">Argyll and Bute</option>
-                                            <option value="3518">Bedfordshire</option>
-                                            <option value="3519">Berkshire</option>
-                                            <option value="3520">Blaenau Gwent</option>
-                                            <option value="3521">Bridgend</option>
-                                            <option value="3522">Bristol</option>
-
-                                        </select>
-                                    </div>
                                     <div class="checkbox">
                                         <label>
+                                            عناوين التسليم والفواتير الخاصة بي هي نفسها.</label>
                                             <input type="checkbox" checked="checked" value="1" name="shipping_address">
-                                            My delivery and billing addresses are the same.</label>
                                     </div>
                                 </fieldset>
                             </div>
                         </div>
                     </div>
-                    <div class="col-right col-sm-9">
+                    <div class="col-right col-sm-9" dir="ltr">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="panel panel-default no-padding">
                                     <div class="col-sm-6 checkout-shipping-methods">
                                         <div class="panel-heading">
-                                            <h4 class="panel-title"><i class="fa fa-truck"></i> Delivery Method</h4>
+                                            <h4 class="panel-title"><i class="fa fa-truck"></i> طريقة التوصيل</h4>
                                         </div>
                                         <div class="panel-body ">
-                                            <p>Please select the preferred shipping method to use on this order.</p>
+                                            <p>يرجى تحديد طريقة الشحن المفضلة لاستخدامها في هذا الطلب.</p>
                                             <div class="radio">
                                                 <label>
                                                     <input type="radio" checked="checked" name="Free Shipping">
-                                                    Flat Shipping Rate - $7.50</label>
+                                                    سعر الشحن الثابت - 7.50 دولارًا</label>
                                             </div>
 
 
@@ -141,21 +124,18 @@
                                     </div>
                                     <div class="col-sm-6  checkout-payment-methods">
                                         <div class="panel-heading">
-                                            <h4 class="panel-title"><i class="fa fa-credit-card"></i> Payment Method
+                                            <h4 class="panel-title"><i class="fa fa-credit-card"></i> وسيلة الدفع
                                             </h4>
                                         </div>
                                         <div class="panel-body">
-                                            <p>Please select the preferred payment method to use on this order.</p>
+                                            <p>يرجى تحديد طريقة الدفع المفضلة لاستخدامها في هذا الطلب.</p>
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" checked="checked" name="Cash On Delivery">Cash
-                                                    On Delivery</label>
+                                                    <input type="radio" checked="checked" name="Cash On Delivery">
+                                                    الدفع كاش عند التوصيل 
+                                                    </label>
                                             </div>
 
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="Paypal">Paypal</label>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -169,18 +149,18 @@
                             <div class="col-sm-12">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"><i class="fa fa-ticket"></i> Do you Have a Coupon or
-                                            Voucher?</h4>
+                                        <h4 class="panel-title"><i class="fa fa-ticket"></i> هل لديك قسيمة؟
+                                        </h4>
                                     </div>
                                     <div class="panel-body row">
                                         <div class="col-sm-12 ">
                                             <div class="input-group">
                                                 <input type="text" class="form-control" id="input-coupon"
-                                                    placeholder="Enter your coupon here" value="" name="coupon">
+                                                    placeholder="ادخل الكود الخاص  بك" value="" name="coupon">
                                                 <span class="input-group-btn">
                                                     <input type="button" class="btn btn-primary"
                                                         data-loading-text="Loading..." id="button-coupon"
-                                                        value="Apply Coupon">
+                                                        value="تفعيل">
                                                 </span>
                                             </div>
                                         </div>
@@ -191,18 +171,18 @@
                             <div class="col-sm-12">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"><i class="fa fa-shopping-cart"></i> Shopping cart</h4>
+                                        <h4 class="panel-title"><i class="fa fa-shopping-cart"></i>عربة التسوق</h4>
                                     </div>
                                     <div class="panel-body">
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
                                                 <thead>
                                                     <tr>
-                                                        <td class="text-center">Image</td>
-                                                        <td class="text-left">Product Name</td>
-                                                        <td class="text-left">Quantity</td>
-                                                        <td class="text-right">Unit Price</td>
-                                                        <td class="text-right">Total</td>
+                                                        <td class="text-center">صورة المنتج</td>
+                                                        <td class="text-left">اسم المنتج</td>
+                                                        <td class="text-left">العدد </td>
+                                                        <td class="text-right">سعر القطعة</td>
+                                                        <td class="text-right">الاجمالي</td>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -258,22 +238,21 @@
                             <div class="col-sm-12">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"><i class="fa fa-pencil"></i> Add Comments About Your
-                                            Order</h4>
+                                        <h4 class="panel-title"><i class="fa fa-pencil"></i> اضف تعليقك حول الطلب الخاص بك</h4>
                                     </div>
                                     <div class="panel-body">
                                         <textarea rows="4" class="form-control" id="confirm_comment"
                                             name="comments"></textarea>
                                         <br>
                                         <label class="control-label" for="confirm_agree">
-                                            <input type="checkbox" checked="checked" value="1" required=""
-                                                class="validate required" id="confirm_agree" name="confirm agree">
-                                            <span>I have read and agree to the <a class="agree" href="#"><b>Terms &amp;
-                                                        Conditions</b></a></span> </label>
+                                            <span>لقد قرات ووافقت على ال <a class="agree" href="#"><b>شروط &amp;
+                                                والاحكام</b></a></span> </label>
+                                                <input type="checkbox" checked="checked" value="1" required=""
+                                                    class="validate required" id="confirm_agree" name="confirm agree">
                                         <div class="buttons">
                                             <div class="pull-right">
                                                 <input type="button" class="btn btn-primary" id="button-confirm"
-                                                    value="Confirm Order">
+                                                    value="تاكيد الطلب">
                                             </div>
                                         </div>
                                     </div>

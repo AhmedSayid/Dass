@@ -4,22 +4,22 @@
         <ul class="breadcrumb">
             <li><a href="#"><i class="fa fa-home"></i></a></li>
             <li><a href="#">Account</a></li>
-            <li><a href="#">My Wish List</a></li>
+            <li><a href="#">قائمة الامنيات</a></li>
         </ul>
 
         <div class="row">
             <!--Middle Part Start-->
             <div id="content" class="col-sm-12">
-                <h2 class="title">My Wish List</h2>
+                <h2 class="title">قائمة الامنيات</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
-                                <td class="text-center">image</td>
-                                <td class="text-left">Product Name</td>
-                                <td class="text-left">Model</td>
-                                <td class="text-right">Stock</td>
-                                <td class="text-right">Unit Price</td>
+                                <td class="text-center">الصورة</td>
+                                <td class="text-left"> اسم المنتج </td>
+                                <td class="text-left">الاصدار</td>
+                                <td class="text-right">العدد</td>
+                                <td class="text-right">سعر القطعة </td>
                                 <td class="text-right">Action</td>
                             </tr>
                         </thead>

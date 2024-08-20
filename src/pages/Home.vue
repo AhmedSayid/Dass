@@ -95,14 +95,15 @@
                                         data-items_column1="3" data-items_column2="3" data-items_column3="2"
                                         data-items_column4="1" data-lazyload="yes" data-loop="no" data-buttonpage="top">
                                         <div class="item">
-                                            <div class="product-layout product-grid">
+                                            <div v-for="product in products.slice(0, 2)"
+                                                class="product-layout product-grid">
                                                 <div class="product-item-container item--static">
                                                     <div class="left-block">
                                                         <div class="product-../assets/img-container second_img">
                                                             <router-link :to="{ name: 'Product' }">
 
                                                                 <a target="_self" title="Volup tatem accu">
-                                                                    <img :src="ImageProduct1"
+                                                                    <img :src="'http://127.0.0.1:8000/' + product.image_url"
                                                                         class="img-1 img-responsive "
                                                                         :alt="ImageProduct1">
                                                                     <img :src="ImageProduct2"
@@ -126,8 +127,8 @@
                                                             </button>
 
                                                         </div>
-                                                        <h4><a title="Volup tatem accu" target="_self">Volup tatem
-                                                                accu</a></h4>
+                                                        <h4><a title="Volup tatem accu"
+                                                                target="_self">{{ product.name }}</a></h4>
                                                         <div class="rating"> <span class="fa fa-stack"><i
                                                                     class="fa fa-star fa-stack-2x"></i></span>
                                                             <span class="fa fa-stack"><i
@@ -140,109 +141,13 @@
                                                                     class="fa fa-star-o fa-stack-2x"></i></span>
                                                         </div>
                                                         <div class="price">
-                                                            <span class="price">$48.00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-layout product-grid">
-                                                <div class="product-item-container item--static">
-                                                    <div class="left-block">
-                                                        <div class="product-../assets/img-container second_img">
-                                                            <a target="_self" title="DPicanha porkcho">
-                                                                <img :src="ImageProduct1" class="img-1 img-responsive"
-                                                                    :alt="ImageProduct1">
-                                                                <img :src="ImageProduct2" class="img-2 img-responsive"
-                                                                    :alt="ImageProduct2">
-                                                            </a>
-                                                        </div>
-                                                        <span class="label-product label-جديد">جديد</span>
-                                                        <!--quickview-->
-
-                                                        <!--end quickview-->
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <div class="button-group cartinfo--static">
-                                                            <button type="button" class="wishlist btn-button"
-                                                                title="Add to Wish List"
-                                                                onclick="wishlist.add('60');"><i
-                                                                    class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart"
-                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
-                                                                <span>اضف الي العربة </span>
-                                                            </button>
-
-                                                        </div>
-                                                        <h4><a title="Picanha porkcho" target="_self">Picanha
-                                                                porkcho</a></h4>
-                                                        <div class="rating"> <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span class="price">$89.00</span>
+                                                            <span class="price">{{ product.price }}</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="product-layout product-grid">
-                                                <div class="product-item-container item--static">
-                                                    <div class="left-block">
-                                                        <div class="product-../assets/img-container second_img">
-                                                            <a target="_self" title="Stickrum bresao">
-                                                                <img :src="ImageProduct1" class="img-1 img-responsive"
-                                                                    :alt="ImageProduct1">
-                                                                <img :src="ImageProduct2" class="img-2 img-responsive"
-                                                                    :alt="ImageProduct2">
-                                                            </a>
-                                                        </div>
-                                                        <span class="label-product label-sale">-11%</span>
-                                                        <!--quickview-->
-
-                                                        <!--end quickview-->
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <div class="button-group cartinfo--static">
-
-                                                            <button type="button" class="wishlist btn-button"
-                                                                title="Add to Wish List"
-                                                                onclick="wishlist.add('60');"><i
-                                                                    class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart"
-                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
-                                                                <span>اضف الي العربة </span>
-                                                            </button>
-
-                                                        </div>
-                                                        <h4><a title="Stickrum bresao" target="_self">Stickrum
-                                                                bresao</a></h4>
-                                                        <div class="rating"> <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star-o fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star-o fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star-o fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star-o fa-stack-2x"></i></span>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span class="price-جديد">$85.00</span>
-                                                            <span class="price-old">$96.00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="product-layout product-grid">
                                                 <div class="product-item-container item--static">
                                                     <div class="left-block">
@@ -298,54 +203,6 @@
                                                 <div class="product-item-container item--static">
                                                     <div class="left-block">
                                                         <div class="product-../assets/img-container second_img">
-                                                            <a target="_self" title="Remporum stick">
-                                                                <img :src="ImageProduct1" class="img-1 img-responsive"
-                                                                    :alt="ImageProduct1">
-                                                                <img :src="ImageProduct2" class="img-2 img-responsive"
-                                                                    :alt="ImageProduct2">
-                                                            </a>
-                                                        </div>
-                                                        <span class="label-product label-جديد">جديد</span>
-                                                        <!--quickview-->
-
-                                                        <!--end quickview-->
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <div class="button-group cartinfo--static">
-
-                                                            <button type="button" class="wishlist btn-button"
-                                                                title="Add to Wish List"
-                                                                onclick="wishlist.add('60');"><i
-                                                                    class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart"
-                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
-                                                                <span>اضف الي العربة </span>
-                                                            </button>
-
-                                                        </div>
-                                                        <h4><a title="Remporum stick" target="_self">Remporum stick</a>
-                                                        </h4>
-                                                        <div class="rating"> <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star-o fa-stack-2x"></i></span>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span class="price">$65.00</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-layout product-grid">
-                                                <div class="product-item-container item--static">
-                                                    <div class="left-block">
-                                                        <div class="product-../assets/img-container second_img">
                                                             <a target="_self" title="Luis rute arure">
                                                                 <img :src="ImageProduct1" class="img-1 img-responsive"
                                                                     :alt="ImageProduct1">
@@ -393,54 +250,6 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="product-layout product-grid">
-                                                <div class="product-item-container item--static">
-                                                    <div class="left-block">
-                                                        <div class="product-../assets/img-container second_img">
-                                                            <a target="_self" title="Sunt in culpa">
-                                                                <img :src="ImageProduct1" class="img-1 img-responsive"
-                                                                    :alt="ImageProduct1">
-                                                                <img :src="ImageProduct2" class="img-2 img-responsive"
-                                                                    :alt="ImageProduct2">
-                                                            </a>
-                                                        </div>
-                                                        <!--quickview-->
-
-                                                        <!--end quickview-->
-                                                    </div>
-                                                    <div class="right-block">
-                                                        <div class="button-group cartinfo--static">
-
-                                                            <button type="button" class="wishlist btn-button"
-                                                                title="Add to Wish List"
-                                                                onclick="wishlist.add('60');"><i
-                                                                    class="fa fa-heart"></i></button>
-                                                            <button type="button" class="addToCart"
-                                                                title="اضف الي العربة" onclick="cart.add('60 ');">
-                                                                <span>اضف الي العربة </span>
-                                                            </button>
-
-                                                        </div>
-                                                        <h4><a title="Sunt in culpa" target="_self">Sunt in culpa</a>
-                                                        </h4>
-                                                        <div class="rating"> <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star fa-stack-2x"></i></span>
-                                                            <span class="fa fa-stack"><i
-                                                                    class="fa fa-star-o fa-stack-2x"></i></span>
-                                                        </div>
-                                                        <div class="price">
-                                                            <span class="price">$40.00</span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
                                             <div class="product-layout product-grid">
                                                 <div class="product-item-container item--static">
                                                     <div class="left-block">
@@ -981,9 +790,9 @@
 
                     </div>
                     <div class="container">
-                        
-                            <Pakages></Pakages>
-                      
+
+                        <Pakages></Pakages>
+
                     </div>
                 </div>
 
@@ -993,6 +802,7 @@
 </template>
 
 <script>
+
 import Navbar from '../components/Navbar.vue';
 import ImageSlider from "../assets/img/slider-1.jpg"
 import ImageSlide2 from "../assets/img/slider-2.jpg"
@@ -1018,10 +828,18 @@ import b5 from "../assets/img/b5.jpg"
 import b6 from "../assets/img/b6.jpg"
 import b7 from "../assets/img/b7.jpg"
 import Pakages from '../components/pakages.vue';
+import axios from 'axios';
 export default {
     name: "Home",
     data() {
         return {
+            // products
+            products: [],
+            /////////////
+
+
+
+
             ImageSlider,
             ImageSlide2,
             ImageSlider3,
@@ -1045,12 +863,19 @@ export default {
             b5,
             b6,
             b7
-
         }
     },
     components: {
         Pakages
-    }
+    },
+    mounted() {
+        axios.get('http://127.0.0.1:8000/api/products').then(({ data }) => {
+            this.products = data;
+
+
+            console.log(data)
+        })
+    },
 
 }
 </script>

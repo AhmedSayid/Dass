@@ -73,7 +73,7 @@
 								</div>
 							</div>
 						</fieldset>
-    <div id="google_translate_element"></div>
+						<div id="google_translate_element"></div>
 
 						<button class="btn btn-primary" type="submit" style="width: 100%;"> تسجيل</button>
 					</form>
@@ -81,7 +81,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 </template>
 <script>
 import Navbar from '../../components/Navbar.vue';
@@ -126,7 +126,7 @@ export default {
 					}
 					Swal.fire({
 						title: 'Error!',
-						html: errorMessages,
+						html: '<h3 style="color:red">' + errorMessages + '</h3>',
 						icon: 'error',
 						confirmButtonText: 'OK'
 					});

@@ -143,6 +143,6 @@
 
 export default {
     name: 'Cart',
-
+    
 }
 </script>

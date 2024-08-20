@@ -96,10 +96,6 @@
       height: 100%;
       object-fit: cover;
     }
-
-    .owl2-stage {
-      transform: translate3d(0, 0, 0) !important;
-    }
   </style>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
@@ -163,9 +159,138 @@
       font-weight: bold;
       color: #333;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      top: 0 !important;
+    }
+
+    html {
+      height: auto;
+    }
+
+    .VIpgJd-ZVi9od-ORHb {
+      display: none !important;
+    }
+
+    .VIpgJd-ZVi9od-ORHb-OEVmcd {
+      display: none !important;
+
+    }
+
+    .goog-te-banner-frame {
+      display: none;
+    }
+
+    #goog-gt-tt {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
+    #google_translate_element {
+      position: absolute;
+      z-index: 99999;
+    }
+/**/
+    .goog-te-gadget {
+      font-family: Roboto, 'Open Sans', sans-serif !important;
+      text-transform: uppercase;
+    }
+
+    .goog-te-gadget-simple {
+      background-color: rgba(255, 255, 255, 0.20) !important;
+      border: 1px solid rgba(255, 255, 255, 0.50) !important;
+      padding: 8px !important;
+      border-radius: 4px !important;
+      font-size: 1rem !important;
+      line-height: 2rem !important;
+      display: inline-block;
+      cursor: pointer;
+      zoom: 1;
+    }
+
+    .goog-te-menu2 {
+      max-width: 100%;
+    }
+
+    .goog-te-menu-value {
+      color: #fff !important;
+
+      &:before {
+        font-family: 'Material Icons';
+        content: "\E927";
+        margin-right: 16px;
+        font-size: 2rem;
+        vertical-align: -10px;
+        width: 32px !important;
+      }
+    }
+
+    .goog-te-menu-value span:nth-child(5) {
+      display: none;
+    }
+
+    .goog-te-menu-value span:nth-child(3) {
+      border: none !important;
+      font-family: 'Material Icons';
+
+      &:after {
+        font-family: 'Material Icons';
+        content: "\E5C5";
+        font-size: 1.5rem;
+        vertical-align: -6px;
+      }
+    }
+
+    .goog-te-gadget-icon {
+      display: none;
+    }
+
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+
+      .placeholder {
+        display: inline-block;
+        min-height: 1em;
+        vertical-align: middle;
+        cursor: wait;
+        background-color: currentcolor;
+        opacity: 0.5;
+      }
+
+      .placeholder.btn::before {
+        display: inline-block;
+        content: "";
+      }
+
+      .placeholder-xs {
+        min-height: 0.6em;
+      }
+
+      .placeholder-sm {
+        min-height: 0.8em;
+      }
+
+      .placeholder-lg {
+        min-height: 1.2em;
+      }
+
+      .placeholder-glow .placeholder {
+        animation: placeholder-glow 2s ease-in-out infinite;
+      }
+
+      @keyframes placeholder-glow {
+        50% {
+          opacity: 0.2;
+        }
+      }
+    }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  <!-- <script type="text/javascript" src="./src/assets/js/jquery-2.2.4.min.js"></script>
+<!--   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script type="text/javascript" src="./src/assets/js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="./src/assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./src/assets/js/owl-carousel/owl.carousel.js"></script>
   <script type="text/javascript" src="./src/assets/js/slick-slider/slick.js"></script>
@@ -204,14 +329,16 @@
   </script>
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        { pageLanguage: 'en' },
-        'google_translate_element'
-      );
-    } 
+      new google.translate.TranslateElement({
+        pageLanguage: 'ar',
+        includedLanguages: 'ar,en', //ضع هنا اللغات المطلوبة للترجمة , put here language that u need to translate
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: true
+      }, 'google_translate_element');
+    }
   </script>
   <script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </html>
 </body>

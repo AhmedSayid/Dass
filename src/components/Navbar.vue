@@ -22,21 +22,11 @@
                     <div class="header-top-right col-lg-9 col-md-8 col-sm-7 col-xs-12">
                         <ul class="top-link list-inline lang-curr">
                             <li class="language">
-                                <div class="btn-group languages-block ">
+                                <div class="btn-group languages-block " style="margin-bottom: 45px;">
                                     <form action="#" method="post" enctype="multipart/form-data" id="bt-language">
-                                        <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <img src="../assets/img/catalog/flags/gb.png" alt="English" title="English">
-                                            <span class="eng">English</span>
-                                            <span class="fa fa-angle-down"></span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#"><img class="../assets/img_flag"
-                                                        src="../assets/img/catalog/flags/gb.png" alt="English"
-                                                        title="English" /> English </a></li>
-                                            <li> <a href="#"> <img class="../assets/img_flag"
-                                                        src="../assets/img/catalog/flags/ar.png" alt="Arabic"
-                                                        title="Arabic" /> Arabic </a> </li>
-                                        </ul>
+
+                                        <div id="google_translate_element">
+                                        </div>
                                     </form>
                                 </div>
 
@@ -78,12 +68,9 @@
                                             bis_skin_checked="1">
                                             <select class="no-border" name="category_id">
                                                 <option value="0">كل الاقسام </option>
-                                                <option value="78">اكسسوارات داخلية</option>
-                                                <option value="77">اكسسوارات خارجية</option>
-                                                <option value="82">اكسسوارات تقنية</option>
-                                                <option value="80">اكسسوارات الامان</option>
-                                                <option value="81">عروض وخصومات</option>
-                                                <option value="79">منتجات غير موجودة</option>
+                                                <option v-for="categorie in categories" value="78">{{ categorie.name }}
+                                                </option>
+
                                             </select>
                                         </div>
 
@@ -283,18 +270,8 @@
                                                                             <div class="col-sm-12">
                                                                                 <div class="row">
                                                                                     <div class="col-md-4 static-menu">
-                                                            <li><a href="#">قسم اكسسوارات داخلية</a>
-                                                            </li>
-                                                            <li><a href="#">قسم اكسسوارات جارجية</a>
-                                                            </li>
-
-                                                            <li><a href="#">اكسسوارات تقنية</a>
-                                                            </li>
-                                                            <li><a href="#">اكسسوارات الامان</a>
-                                                            </li>
-                                                            <li><a href="#">قسم التخفيضات</a>
-                                                            </li>
-                                                            <li><a href="#">قسم الطلبات الغير موجودة</a>
+                                                            <li v-for="categorie in categories">
+                                                                {{ categorie.name }}
                                                             </li>
                                                     </div>
 
@@ -471,43 +448,21 @@
                                                         <div class="row">
                                                             <div class="col-sm-12">
                                                                 <div class="row">
-                                                                    <div class="col-md-3 img img1">
-                                                                        <a href="#"><img src="../assets/img/image-1.jpg"
+                                                                    <div v-for="categorie in categories"
+                                                                        class="col-md-3 img img1">
+                                                                        <a href="#"><img
+                                                                                :src="'http://127.0.0.1:8000/storage/' + categorie.image"
                                                                                 alt="banner1"></a>
-                                                                    </div>
-                                                                    <div class="col-md-3 img img2">
-                                                                        <a href="#"><img src="../assets/img/image-3.jpg"
-                                                                                alt="banner2"></a>
-                                                                    </div>
-                                                                    <div class="col-md-3 img img3">
-                                                                        <a href="#"><img src="../assets/img/image-2.jpg"
-                                                                                alt="banner3"></a>
-                                                                    </div>
-                                                                    <div class="col-md-3 img img4">
-                                                                        <a href="#"><img src="../assets/img/image-4.jpg"
-                                                                                alt="banner4"></a>
+
+                                                                        <a href="#" class="title-submenu">
+                                                                            {{ categorie.name }}
+                                                                        </a>
+
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <a href="#" class="title-submenu">اكسسوارات داخلية</a>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <a href="#" class="title-submenu">اكسسوارات خارجية</a>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <a href="#" class="title-submenu">
-                                                                    اكسسوارات الامان
-                                                                </a>
 
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <a href="#" class="title-submenu">اكسسوارات تقينة</a>
-
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
@@ -522,7 +477,7 @@
                 </div>
             </div>
         </div>
-        </div>  
+        </div>
         </div>
 
         </div>
@@ -530,13 +485,27 @@
     </header>
 </template>
 <script>
+import axios from 'axios';
+
 
 export default {
     name: 'Navbar',
-        methods: {
-            GoToHell() {
-                location.href="/FAQ"
-            }
-        },
+    methods: {
+        GoToHell() {
+            location.href = "/FAQ"
+        }
+    },
+    data() {
+        return {
+            categories: []
+        }
+    },
+    mounted() {
+
+        axios.get("http://127.0.0.1:8000/api/categories").then(({ data }) => {
+            this.categories = data;
+            console.log(this.categories)
+        })
+    },
 }
 </script>
